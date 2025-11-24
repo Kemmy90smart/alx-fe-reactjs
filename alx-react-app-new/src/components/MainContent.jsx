@@ -1,8 +1,13 @@
 function MainContent() {
   return (
-    <main style={{ backgroundColor: '#f0f0f0', padding: '20px', marginTop: '10px' }}>
-      <h2 style={{ textAlign: 'center' }}>Welcome to My React App</h2>
-      <p>This is where the main content goes.</p>
+    <main style={{ 
+      padding: '20px', 
+      backgroundColor: '#f2f2f2', 
+      textAlign: 'center', 
+      minHeight: '200px' 
+    }}>
+      <h2>Main Content</h2>
+      <p>Welcome to my React app with inline CSS styling!</p>
     </main>
   );
 }

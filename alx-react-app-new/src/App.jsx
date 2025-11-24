@@ -1,14 +1,27 @@
 // src/App.jsx
-import Counter from './components/Counter'; // Import Counter component
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import UserProfile from './components/UserProfile';
+import Footer from './components/Footer';
+import Counter from './components/Counter';
 
 function App() {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Simple Counter App</h1>
-      
-      {/* Render Counter component */}
+    <>
+      <Header />
+
+      <MainContent />
+
+      <UserProfile
+        name="Taiwo Afusat"
+        age={25}
+        bio="I love React, frontend development, and exploring new cities."
+      />
+
       <Counter />
-    </div>
+
+      <Footer />
+    </>
   );
 }
 
