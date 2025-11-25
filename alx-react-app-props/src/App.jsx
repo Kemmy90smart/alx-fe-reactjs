@@ -1,13 +1,14 @@
-import UserContext from "./UserContext";
-import ProfilePage from "./ProfilePage";
+import { UserProvider } from "./UserContext";
+import UserProfile from "./UserProfile";
 
 function App() {
-  const userData = { name: "Jane Doe", email: "jane.doe@example.com" };
-
   return (
-    <UserContext.Provider value={userData}>
-      <ProfilePage />
-    </UserContext.Provider>
+    <UserProvider>
+      <div>
+        <h1>ALX React Props & Context Task</h1>
+        <UserProfile />
+      </div>
+    </UserProvider>
   );
 }
 
