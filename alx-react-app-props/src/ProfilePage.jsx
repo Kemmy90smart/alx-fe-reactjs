@@ -1,7 +1,7 @@
 import UserInfo from "./UserInfo";
 
 function ProfilePage() {
-  return <UserInfo />;
+  return <UserInfo />; // ❌ No props passed
 }
 
 export default ProfilePage;
